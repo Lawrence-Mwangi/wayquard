@@ -1,0 +1,34 @@
+$primary-color:#010001;
+$secondary-color: #FFFFFF;
+$accent-color: #30BCED;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    background: $primary-color;
+    color:$secondary-color;
+}
+
+.global_container{
+    padding:3em 3%;
+    margin:0 0 3em;
+}
+
+.btn{
+    button{
+        padding:0.7em 0.9em;
+        border:none;
+        border-radius:8px;
+        color:$secondary-color;
+        background: $accent-color;
+        
+        &:hover{
+            background:$secondary-color;
+        }
+    }
+}

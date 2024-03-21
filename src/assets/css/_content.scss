@@ -1,0 +1,25 @@
+.content_container{
+    p{
+        padding: 0.4em 0;
+    }    
+   .content_items{
+        @include grid(2);
+        padding:1em 0;
+        gap:2em;
+
+        .content_infor, .content_infor1{
+            box-shadow: 2px 2px 4px $secondary-color;
+            padding:0.3em 0.9em;
+            border-radius: 16px;
+            span{
+                color:$accent-color;
+            }
+        }
+   }
+}
+
+@media screen and (width <=726px) {
+    .content_container{
+        padding:0 5%;
+    }
+}

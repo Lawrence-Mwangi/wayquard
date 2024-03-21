@@ -1,0 +1,49 @@
+.global_container{
+    .service_container{
+        @include grid(3);
+        padding: 0.9em 0;
+
+        .service_content{
+            box-shadow: 3px 3px 4px $accent-color;
+            padding: 0.5em;
+            border-radius: 16px;
+            background: $secondary_color;
+            color:$primary-color;
+            .service{
+                @include flex_center;
+                align-items: center;
+                img{
+                    width:280px ;
+                    height: 180px;
+                    border-radius: 16px;
+                }
+            }
+            p{
+                padding:0.3em 0;
+                font-size: 1em;
+        
+                span{
+                    color:green;
+                    font-weight: 550;
+                }
+            }
+        }
+    }
+    .welcome{
+        p{
+            font-size: 1.2em;
+            padding: 0.5em 0;
+            span{
+                color:$accent-color;
+            }
+        }
+    }
+}
+
+@media screen and (width <=726px) {
+    .global_container{
+        .service_container,.welcome{
+            padding:0.9em 5%;
+        }
+    }
+}

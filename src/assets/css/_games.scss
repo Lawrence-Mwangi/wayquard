@@ -1,0 +1,23 @@
+.games_container{
+    p{
+        padding:0.9em 0;
+    }
+    .games_content{
+        @include grid(2);
+    
+        h3{
+            color:$accent-color;
+        }
+        .games_items,.games_item{
+            border:1px solid $secondary-color;
+            border-radius: 8px;
+            padding:0.3em 0.9em;
+        }
+    }
+}
+
+@media screen and (width <=726px) {
+    .games_container{
+        padding:0 5%;
+    }
+}

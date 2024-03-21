@@ -1,0 +1,19 @@
+//global styles
+@import 'global';
+@import 'mixins';
+
+
+//partial styles
+@import 'nav';
+@import 'footer';
+
+
+
+//Main styles
+@import 'hero';
+@import 'content';
+@import 'games';
+@import 'contact';
+@import 'about';
+@import 'service';
+

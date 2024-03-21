@@ -1,0 +1,104 @@
+.nav_container{
+    @include flex_center;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 4px $secondary-color;
+    backdrop-filter: blur(3px);
+    padding:0 1.2em;
+    height: 10vh;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+
+    a{
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 1.2em;
+
+        &:hover{
+            color:$accent-color;
+        }
+    }
+
+    .logo{
+        @include flex_center;
+        flex-direction: row;
+        align-items: center;
+        gap:0.9em;
+
+        img{
+            border-radius: 50%;
+        }
+    }
+    .nav_links{
+
+       ul{
+        @include flex_center;
+        flex-direction: row;
+        list-style: none;
+       }
+
+    }
+
+    .burger{
+        display: none;
+        cursor: pointer;
+        padding:0.4em 0.4em;
+
+        span{
+            display: block;
+            margin: 6px 0;
+            background-color:$secondary-color;
+            width: 30px;
+            height: 3px;
+            transition: transform 0.3s ease; 
+        }
+        .burger.active span:first-child {
+            transform: rotate(45deg) translate(5px, 5px); 
+        }
+    
+        .burger.active span:nth-child(2) {
+        opacity: 0; 
+        }
+    
+        .burger.active span:last-child {
+        transform: rotate(-45deg) translate(5px, -5px); 
+        }
+    }
+}
+
+@media screen and (width <=726px) {
+    .nav_container{
+        .nav_links{
+            ul{
+                flex-direction: column;
+                position: absolute;
+                top: 10vh;
+                right: 0;
+                width: 50%;
+                height: 65vh;
+                background: grey;
+                backdrop-filter: blur(3px);
+                display: none;
+                z-index: 99;
+                a{
+                    color:$primary-color;
+                    @include flex_center;
+                    align-items: center;
+                    padding: 0.9em 0;
+                }
+                &.show{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }    
+            }
+        }
+        .burger{
+            display: block;
+        }
+
+    }
+}
