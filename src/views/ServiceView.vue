@@ -80,7 +80,7 @@ import Footer from '@/components/FooterComponent.vue'
             </div>
         </div>
         <div class="welcome">
-            <p>Your Are All Welcomed To <span>WAYQUAD VR</span>  Let Enjoy Virtual Reality Exprience Together!</p>
+            <p>Your Are All Welcomed To <span>WAYQUAD VR</span>  Let Enjoy Virtual Reality Exprience Together at affordable Price!!</p>
         </div>
     </div>
 
