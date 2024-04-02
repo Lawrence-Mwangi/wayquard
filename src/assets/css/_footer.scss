@@ -1,7 +1,9 @@
+$footer_color:#313030;
+
 .footer_container{
     @include grid(3);
-    background: $secondary-color;
-    color: $primary-color;
+    background:$footer_color;
+    color: $secondary-color;
     padding:0.5em 0.9em;
 
     .footer_infor{
@@ -21,7 +23,7 @@
 
             a{
                 text-decoration: none;
-                color: $primary-color;
+                color: $secondary-color;
                 font-weight: 550;
 
                 &:hover{
@@ -31,6 +33,9 @@
         }
     }
     .footer_media{
+        h2{
+            padding: 0.4em 0;
+        }
         a{
             margin: 0 0.5em;
 
@@ -44,7 +49,7 @@
 .footer_copyrigth{
     p{
         padding:0.3em 0.9em;
-        background: #535252;
+        background: $footer_color;
         text-align: center;
         font-size: 1.1em;
     }

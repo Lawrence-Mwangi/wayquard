@@ -10,9 +10,9 @@ const toggleMenu = () => {
 };
 
 const navigate = (sectionId) => {
-  if (sectionId === 'home' || sectionId === 'about' || sectionId === 'service') {
+  if (sectionId === 'home' || sectionId === 'about' || sectionId === 'service' || sectionId ==='Contact') {
     router.push({ name: sectionId });
-    isResponsive.value = false; // Close the menu on navigation
+    isResponsive.value = false; 
   }
 };
 
@@ -33,10 +33,10 @@ const navigate = (sectionId) => {
                 <li><a href="#Contact" @click="toggleMenu">Contact</a></li>
             </ul>
         </div>
-        <div class="burger" @click="toggleMenu">
-            <span :class="{ 'active': isResponsive }"></span>
-            <span :class="{ 'active': isResponsive }"></span>
-            <span :class="{ 'active': isResponsive }"></span>
+        <div class="burger" @click="toggleMenu" :class="{ 'active': isResponsive }">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
 </template>

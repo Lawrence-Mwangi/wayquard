@@ -30,6 +30,7 @@
             </a>
         </div>
     </div>
+    <hr>
     <div class="footer_copyrigth">
         <p>&copy;2024 | WayQuad VR | All Rigth Reserved</p>
     </div>
